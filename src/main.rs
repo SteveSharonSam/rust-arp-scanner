@@ -101,11 +101,6 @@ fn listen_for_packets(mut rx: Box<dyn DataLinkReceiver>, ipv4_net: Ipv4Network) 
         };
         let ethernet_packet = EthernetPacket::new(arp_buffer).unwrap();
 
-        //    let is_arp = matches!(ethernet_packet.get_ethertype(), EtherTypes::Arp);
-        //    if !is_arp {
-        //        panic!("The ethernet frame is not an arp packet!!");
-        //    }
-
         if ethernet_packet.get_ethertype() == EtherTypes::Arp {
             let arp_packet = ArpPacket::new(ethernet_packet.payload()).unwrap();
             if arp_packet.get_operation() == ArpOperations::Reply {
