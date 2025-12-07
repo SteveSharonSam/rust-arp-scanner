@@ -91,6 +91,12 @@ Mac addr:       aa:bb:cc:dd:ee:ff
 - Fixed timing parameters may need adjustment for larger networks
 - Scanner only sends one ARP request per IP (may miss some devices)
 
+## To do 
+- Proper error propagation
+- Prevent panics
+- Proper Input
+- Proper Output
+
 ## Security Note
 
 This tool is intended for network administration and educational purposes only. Only scan networks you own or have explicit permission to scan. Unauthorized network scanning may be illegal in your jurisdiction.
