@@ -1,0 +1,375 @@
+   0.061692000s  INFO prepare_target{force=false package_id=arpscanner v0.1.0 (C:\Users\91799\Programming\Rust\arpscanner) target="arpscanner"}: cargo::core::compiler::fingerprint: stale: missing "C:\\Users\\91799\\Programming\\Rust\\arpscanner\\target\\debug\\.fingerprint\\pnet_macros_support-0274dcadc8127040\\dep-lib-pnet_macros_support"
+   0.061954800s  INFO prepare_target{force=false package_id=arpscanner v0.1.0 (C:\Users\91799\Programming\Rust\arpscanner) target="arpscanner"}: cargo::core::compiler::fingerprint: fingerprint error for arpscanner v0.1.0 (C:\Users\91799\Programming\Rust\arpscanner)/Check { test: false }/TargetInner { name: "arpscanner", doc: true, ..: with_path("C:\\Users\\91799\\Programming\\Rust\\arpscanner\\src\\main.rs", Edition2024) }
+   0.061993400s  INFO prepare_target{force=false package_id=arpscanner v0.1.0 (C:\Users\91799\Programming\Rust\arpscanner) target="arpscanner"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\91799\Programming\Rust\arpscanner\target\debug\.fingerprint\arpscanner-c4c8410bf126cfce\bin-arpscanner`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.075591200s  INFO prepare_target{force=false package_id=pnet v0.35.0 target="pnet"}: cargo::core::compiler::fingerprint: fingerprint error for pnet v0.35.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("pnet", ["lib"], "C:\\Users\\91799\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\pnet-0.35.0\\src\\lib.rs", Edition2021) }
+   0.075626800s  INFO prepare_target{force=false package_id=pnet v0.35.0 target="pnet"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\91799\Programming\Rust\arpscanner\target\debug\.fingerprint\pnet-2cf023eacdedfa9b\lib-pnet`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_libgit2_prerelease
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: git_midx_writer_dump
+  18: git_filter_source_repo
+  19: git_midx_writer_dump
+  20: BaseThreadInitThunk
+  21: RtlUserThreadStart
+   0.076101300s  INFO prepare_target{force=false package_id=ipnetwork v0.20.0 target="ipnetwork"}: cargo::core::compiler::fingerprint: fingerprint error for ipnetwork v0.20.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("ipnetwork", ["lib"], "C:\\Users\\91799\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\ipnetwork-0.20.0\\src\\lib.rs", Edition2021) }
+   0.076124000s  INFO prepare_target{force=false package_id=ipnetwork v0.20.0 target="ipnetwork"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\91799\Programming\Rust\arpscanner\target\debug\.fingerprint\ipnetwork-58ab42c0bd325032\lib-ipnetwork`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.076496200s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde", ["lib"], "C:\\Users\\91799\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde-1.0.228\\src\\lib.rs", Edition2021) }
+   0.076517100s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\91799\Programming\Rust\arpscanner\target\debug\.fingerprint\serde-a8369bf1801d039a\lib-serde`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.078032900s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde_core", ["lib"], "C:\\Users\\91799\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\serde_core-1.0.228\\src\\lib.rs", Edition2021) }
+   0.078056600s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\91799\Programming\Rust\arpscanner\target\debug\.fingerprint\serde_core-c51413476724ab93\lib-serde_core`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.080648600s  INFO prepare_target{force=false package_id=pnet_datalink v0.35.0 target="pnet_datalink"}: cargo::core::compiler::fingerprint: fingerprint error for pnet_datalink v0.35.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("pnet_datalink", ["lib"], "C:\\Users\\91799\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\pnet_datalink-0.35.0\\src\\lib.rs", Edition2021) }
+   0.080672400s  INFO prepare_target{force=false package_id=pnet_datalink v0.35.0 target="pnet_datalink"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\91799\Programming\Rust\arpscanner\target\debug\.fingerprint\pnet_datalink-127f5522c91f18ac\lib-pnet_datalink`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.082213000s  INFO prepare_target{force=false package_id=pnet_sys v0.35.0 target="pnet_sys"}: cargo::core::compiler::fingerprint: fingerprint error for pnet_sys v0.35.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("pnet_sys", ["lib"], "C:\\Users\\91799\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\pnet_sys-0.35.0\\src\\lib.rs", Edition2021) }
+   0.082238200s  INFO prepare_target{force=false package_id=pnet_sys v0.35.0 target="pnet_sys"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\91799\Programming\Rust\arpscanner\target\debug\.fingerprint\pnet_sys-d69ccf1047318721\lib-pnet_sys`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.082625600s  INFO prepare_target{force=false package_id=winapi v0.3.9 target="winapi"}: cargo::core::compiler::fingerprint: fingerprint error for winapi v0.3.9/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("winapi", ["lib"], "C:\\Users\\91799\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\winapi-0.3.9\\src\\lib.rs", Edition2015) }
+   0.082648400s  INFO prepare_target{force=false package_id=winapi v0.3.9 target="winapi"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\91799\Programming\Rust\arpscanner\target\debug\.fingerprint\winapi-d544cf0a5662c390\lib-winapi`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_filter_source_repo
+  15: git_libgit2_prerelease
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: <unknown>
+  20: git_midx_writer_dump
+  21: git_filter_source_repo
+  22: git_midx_writer_dump
+  23: BaseThreadInitThunk
+  24: RtlUserThreadStart
+   0.083988500s  INFO prepare_target{force=false package_id=pnet_packet v0.35.0 target="pnet_packet"}: cargo::core::compiler::fingerprint: fingerprint error for pnet_packet v0.35.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("pnet_packet", ["lib"], "C:\\Users\\91799\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\pnet_packet-0.35.0\\src\\lib.rs", Edition2018) }
+   0.084013900s  INFO prepare_target{force=false package_id=pnet_packet v0.35.0 target="pnet_packet"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\91799\Programming\Rust\arpscanner\target\debug\.fingerprint\pnet_packet-94b60f9470bab14c\lib-pnet_packet`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.088523200s  INFO prepare_target{force=false package_id=pnet_macros_support v0.35.0 target="pnet_macros_support"}: cargo::core::compiler::fingerprint: fingerprint error for pnet_macros_support v0.35.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("pnet_macros_support", ["lib"], "C:\\Users\\91799\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\pnet_macros_support-0.35.0\\src\\lib.rs", Edition2021) }
+   0.088550600s  INFO prepare_target{force=false package_id=pnet_macros_support v0.35.0 target="pnet_macros_support"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\91799\Programming\Rust\arpscanner\target\debug\.fingerprint\pnet_macros_support-0274dcadc8127040\lib-pnet_macros_support`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_filter_source_repo
+  14: git_libgit2_prerelease
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: <unknown>
+  19: git_midx_writer_dump
+  20: git_filter_source_repo
+  21: git_midx_writer_dump
+  22: BaseThreadInitThunk
+  23: RtlUserThreadStart
+   0.088955700s  INFO prepare_target{force=false package_id=pnet_transport v0.35.0 target="pnet_transport"}: cargo::core::compiler::fingerprint: fingerprint error for pnet_transport v0.35.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("pnet_transport", ["lib"], "C:\\Users\\91799\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\pnet_transport-0.35.0\\src\\lib.rs", Edition2021) }
+   0.088979600s  INFO prepare_target{force=false package_id=pnet_transport v0.35.0 target="pnet_transport"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\91799\Programming\Rust\arpscanner\target\debug\.fingerprint\pnet_transport-1c036aa4b148bfb0\lib-pnet_transport`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_filter_source_repo
+  12: git_filter_source_repo
+  13: git_libgit2_prerelease
+  14: <unknown>
+  15: <unknown>
+  16: <unknown>
+  17: <unknown>
+  18: git_midx_writer_dump
+  19: git_filter_source_repo
+  20: git_midx_writer_dump
+  21: BaseThreadInitThunk
+  22: RtlUserThreadStart
+   0.089511300s  INFO prepare_target{force=false package_id=arpscanner v0.1.0 (C:\Users\91799\Programming\Rust\arpscanner) target="arpscanner"}: cargo::core::compiler::fingerprint: fingerprint error for arpscanner v0.1.0 (C:\Users\91799\Programming\Rust\arpscanner)/Check { test: true }/TargetInner { name: "arpscanner", doc: true, ..: with_path("C:\\Users\\91799\\Programming\\Rust\\arpscanner\\src\\main.rs", Edition2024) }
+   0.089535100s  INFO prepare_target{force=false package_id=arpscanner v0.1.0 (C:\Users\91799\Programming\Rust\arpscanner) target="arpscanner"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\91799\Programming\Rust\arpscanner\target\debug\.fingerprint\arpscanner-26b77661ac9713a6\test-bin-arpscanner`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking serde_core v1.0.228
+    Checking winapi v0.3.9
+    Checking pnet_macros_support v0.35.0
+    Checking pnet_packet v0.35.0
+    Checking pnet_sys v0.35.0
+    Checking serde v1.0.228
+    Checking ipnetwork v0.20.0
+    Checking pnet_datalink v0.35.0
+    Checking pnet_transport v0.35.0
+    Checking pnet v0.35.0
+    Checking arpscanner v0.1.0 (C:\Users\91799\Programming\Rust\arpscanner)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.11s
