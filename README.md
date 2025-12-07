@@ -18,6 +18,7 @@ This tool scans your local network by sending ARP requests to all IP addresses i
 - Rust (latest stable version)
 - Administrative/root privileges (required for raw packet operations)
 - A network interface with an IPv4 address
+- Windows users: Npcap driver must be installed
 
 ## Dependencies
 
@@ -51,6 +52,7 @@ sudo ./target/release/arp-scanner
 ```
 
 ### Windows (Administrator):
+See [github.com/libpnet/libpnet#windows](https://github.com/libpnet/libpnet#windows).
 ```bash
 .\target\release\arp-scanner.exe
 ```
@@ -94,6 +96,10 @@ Mac addr:       aa:bb:cc:dd:ee:ff
 This tool is intended for network administration and educational purposes only. Only scan networks you own or have explicit permission to scan. Unauthorized network scanning may be illegal in your jurisdiction.
 
 ## Troubleshooting
+**Windows: "Failed to create datalink channel"**
+- Install the Npcap driver from https://npcap.com/
+- During installation, make sure to check "Install Npcap in WinPcap API-compatible Mode"
+- Restart your computer after installation
 
 **"No MAC address available!!"**
 - Ensure your network interface is properly configured
