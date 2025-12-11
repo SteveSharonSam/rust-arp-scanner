@@ -2,6 +2,10 @@
 
 A simple network scanner written in Rust that discovers active devices on your local network using ARP (Address Resolution Protocol) requests.
 
+## Security Note
+
+This tool is intended for network administration and educational purposes only. Only scan networks you own or have explicit permission to scan. Unauthorized network scanning may be illegal in your jurisdiction.
+
 ## Overview
 
 This tool scans your local network by sending ARP requests to all IP addresses in your subnet and listening for ARP replies. When a device responds, it displays the device's IP and MAC address.
@@ -96,10 +100,6 @@ Mac addr:       aa:bb:cc:dd:ee:ff
 - Prevent panics
 - Proper Input
 - Proper Output
-
-## Security Note
-
-This tool is intended for network administration and educational purposes only. Only scan networks you own or have explicit permission to scan. Unauthorized network scanning may be illegal in your jurisdiction.
 
 ## Troubleshooting
 **Windows: "Failed to create datalink channel"**
