@@ -22,7 +22,7 @@ This tool scans your local network by sending ARP requests to all IP addresses i
 - Rust (latest stable version)
 - Administrative/root privileges (required for raw packet operations)
 - A network interface with an IPv4 address
-- Windows users: Npcap driver must be installed
+- Windows users: Npcap driver must be installed. See [github.com/libpnet/libpnet#windows](https://github.com/libpnet/libpnet#windows).
 
 ## Dependencies
 
@@ -56,7 +56,6 @@ sudo ./target/release/arp-scanner
 ```
 
 ### Windows (Administrator):
-See [github.com/libpnet/libpnet#windows](https://github.com/libpnet/libpnet#windows).
 ```bash
 .\target\release\arp-scanner.exe
 ```
