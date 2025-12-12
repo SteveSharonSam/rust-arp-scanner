@@ -97,8 +97,9 @@ Mac addr:       aa:bb:cc:dd:ee:ff
 ## To do 
 - Proper error propagation
 - Prevent panics
-- Proper Input
+- ~~Proper Input~~
 - Proper Output
+- Implement tests
 
 ## Troubleshooting
 **Windows: "Failed to create datalink channel"**
