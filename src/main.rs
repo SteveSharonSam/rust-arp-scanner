@@ -1,29 +1,36 @@
 extern crate pnet;
 mod arp;
-mod cli;
+//mod cli;
 mod interface;
 
 use crate::interface::display;
 use arp::{listen_for_packets, send_packet};
-use clap::Parser;
-use cli::Cli;
 use core::panic;
 use pnet::datalink::{self, Channel};
 use pnet::ipnetwork::IpNetwork;
-use std::any::Any;
+use std::io;
+use std::sync::atomic::{AtomicBool, Ordering};
 use std::thread;
 use std::time::Duration;
 
-fn main() -> Result<(), Box<dyn Send + Any>> {
-    let input = Cli::parse();
-    let interfaces = match input.list {
-        false => datalink::interfaces(),
-        true => {
-            display();
-            return Ok(());
-        }
+fn main() -> io::Result<()> {
+    let Some(interfaces) = display() else {
+        println!("Quitting");
+        return Ok(());
     };
-    let interface = interfaces[input.iface].clone();
+    print!("Select interface: ");
+
+    let mut input = String::new();
+    io::stdin().read_line(&mut input)?;
+
+    let idx: usize = input
+        .trim()
+        .parse()
+        .map_err(|_| io::Error::new(io::ErrorKind::InvalidInput, "Invalid interface number"))?;
+    let interface = interfaces
+        .into_iter()
+        .nth(idx)
+        .expect("Index should be within bounds");
 
     let my_mac = match interface.mac {
         Some(mac) => mac,
@@ -32,6 +39,7 @@ fn main() -> Result<(), Box<dyn Send + Any>> {
             return Ok(());
         }
     };
+
     let my_ipv4_net = interface
         .ips
         .iter()
@@ -46,28 +54,33 @@ fn main() -> Result<(), Box<dyn Send + Any>> {
     println!("IP: {my_ipv4_net}");
     println!("Devices found:");
 
-    //Data channel
-    let tunnel = datalink::channel(&interface, datalink::Config::default())
-        .expect("Failed to create datalink channel");
+    let mut config = datalink::Config::default();
+    config.read_timeout = Some(Duration::from_millis(200));
+
+    let tunnel = datalink::channel(&interface, config).expect("Failed to create datalink channel");
     let (sender, recv) = match tunnel {
         Channel::Ethernet(tx, rx) => (tx, rx),
         _ => panic!("Unsupported channel type"),
     };
-    let send_interface = interface.clone();
 
-    let _reciever_thread = thread::spawn(move || {
-        listen_for_packets(recv, my_ipv4_net);
-    });
-    let sender_thread = thread::spawn(move || {
-        send_packet(sender, send_interface, my_ipv4_net, my_mac);
+    //a flag shared between sending and recieving thread
+    //flag set to true by sender thread after which recieving thread stops listening
+    let sending_done = AtomicBool::new(false);
+    thread::scope(|s| {
+        let receiver_thread = s.spawn(|| {
+            listen_for_packets(recv, my_ipv4_net, &sending_done);
+        });
+
+        let sender_thread = s.spawn(|| {
+            send_packet(sender, interface, my_ipv4_net, my_mac);
+            sending_done.store(true, Ordering::Relaxed);
+        });
+
+        sender_thread.join().expect("Sender thread panicked");
+        receiver_thread.join().expect("Receiver thread panicked");
     });
 
-    match sender_thread.join() {
-        Ok(it) => it,
-        Err(err) => return Err(err),
-    };
-    println!("All packets have been sent\nWaiting 10 seconds for receiver!!");
-    thread::sleep(Duration::from_secs(10));
+    println!("All packets have been sent");
     println!("Finished Scan");
     Ok(())
 }

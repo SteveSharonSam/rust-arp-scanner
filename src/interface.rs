@@ -1,9 +1,10 @@
-use pnet::datalink;
+use pnet::datalink::{self, NetworkInterface};
 
-pub(crate) fn display() {
+pub(crate) fn display() -> Option<Vec<NetworkInterface>> {
     let ifaces = datalink::interfaces();
     if ifaces.is_empty() {
         eprintln!("No interfaces available");
+        return None;
     }
 
     println!("The available {} interfaces are:", ifaces.len());
@@ -11,4 +12,6 @@ pub(crate) fn display() {
     for (i, iface) in ifaces.iter().enumerate() {
         println!("{:<6} {:<45} {:<6}", i, iface.description, iface.is_up());
     }
+
+    Some(ifaces)
 }
